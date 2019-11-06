@@ -1,4 +1,4 @@
-![title](.\img\title.PNG)
+![title](./img/title.PNG)
 
 ## Introduction
 
@@ -10,15 +10,15 @@
   2.  Improved technique for mapping from image space to latent space.
   3.  Diﬀerentiate between observations that conform to the training data and such data that does not ﬁt.
 
-![fig1](.\img\fig1.PNG)
+![fig1](./img/fig1.PNG)
 
 ## GAN
 
-![GAN](.\img\GAN.PNG)
+![GAN](./img/GAN.PNG)
 
 ## Generative Adversarial Representation Learning to Identify Anomalies
 
-![fig2](.\img\fig2.PNG)
+![fig2](./img/fig2.PNG)
 
 - This method trains a generative model, and a discriminator to distinguish between generated and real data simultaneously. 
 - Instead of a single cost function optimization, it aims at the Nash equilibrium of costs, increasing the representative power and speciﬁcity of the generative model, while at the same time becoming more accurate in classifying real- from generated data and improving the corresponding feature mapping.
@@ -39,7 +39,7 @@
 
 #### Optimize
 
-- ![optimize](.\img\optimize.PNG)
+- ![optimize](./img/optimize.PNG)
 - During adversarial training the generator improves in generating realistic images and the discriminator progresses in correctly identifying real and generated images.
 
 ## Mapping new Images to the Latent Space
@@ -51,7 +51,7 @@
 
 - Residual Loss : It measures the visual dissimilarity between query image $$x$$ and generated image $$G(z_\gamma)$$ 
 
-  - ![residual](.\img\residual.PNG)
+  - ![residual](./img/residual.PNG)
 
   - If images $$x$$ and $$G(z_\gamma)$$ are identical, the residual loss is zero.
 
@@ -59,19 +59,19 @@
 
   - Instead of optimizing the parameters of the generator via maximizing the discriminator’s output on generated examples, the generator is forced to generate data that has similar statistics as the training data
   - They proposed to use a richer intermediate feature representation of the discriminator
-  - ![discrimination](.\img\discrimination.PNG)
+  - ![discrimination](./img/discrimination.PNG)
   - $$f(\cdot)$$ : The output of an intermediate layer of the discriminator
   - Based on this new loss term, the adaptation of the coordinates of $$z$$ does not only rely on a hard decision of the trained discriminator, whether or not a generated image $$G(z_γ)$$ ﬁts the learned distribution of normal images, but instead takes the rich information of the feature representation, which is learned by the discriminator during adversarial training, into account.
 
 - Overall loss
-  ![overall](.\img\overall.PNG)
+  ![overall](./img/overall.PNG)
 
 - Only the coeﬃcients of z are adapted via back-propagation. The trained parameters of the generator and discriminator are kept ﬁxed.
 
 ## Detection of Anomalies
 
 - Anomaly score
-  ![score](.\img\score.PNG)
+  ![score](./img/score.PNG)
 
 -  The model yields a large anomaly score $$A(x)$$ for anomalous images, whereas a small anomaly score means that a very similar image was already seen during training. 
 - The residual image is used for the identification of anomalous regions within an image.
@@ -92,17 +92,17 @@
 1. Whether the model can generate realistic images.
 2. The anomaly detection accuracy of our approach on images extracted from the annotated test set.
 3. Compare with aCAE(an adversarial convolutional autoencoder) and with the reference discrimination score for evaluating the anomaly detection performance.
-4. ![evaluation](.\img\evaluation.PNG)
+4. ![evaluation](./img/evaluation.PNG)
 
 ## Results
 
-![result](.\img\result.PNG)
+![result](./img/result.PNG)
 
-<img src=".\img\true.PNG" alt="true" style="zoom:50%;" />
+<img src="./img/true.PNG" alt="true" style="zoom:50%;" />
 
-<img src=".\img\sensitivity.PNG" alt="sensitivity" style="zoom: 40%;" /><img src=".\img\precision.PNG" alt="precision" style="zoom:40%;" />
+<img src="./img/sensitivity.PNG" alt="sensitivity" style="zoom: 40%;" /><img src="./img/precision.PNG" alt="precision" style="zoom:40%;" />
 
-![table](.\img\table.PNG)
+![table](./img/table.PNG)
 
 ## Conclusion
 
