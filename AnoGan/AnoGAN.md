@@ -25,7 +25,7 @@
 
 ## Unsupervised Manifold Learning of Normal Anatomical Variability
 
-- $$I_m$$ : A set of $$M$$ medical images that showing healthy anatomy $$(m=1,2,...,M)$$.
+- $I_m$ : A set of $M$ medical images that showing healthy anatomy $(m=1,2,...,M)$.
 - $$I_m\in\R^{a\times b}$$ : An intensity image of size a x b.
 - $$\Chi=x_{k,m}\in\chi$$ : $$K$$ 2D image patches from each image $$I_m$$ ($$k=1,2,...,K$$)
 
@@ -35,7 +35,7 @@
 
 #### Test
 
-- For testing, they used  $$\langle y_n,l_n \rangle$$ unseen images of size $$c \times c$$ extracted form new testing data $$J$$ and $$l_n \in \{0,1\}$$ is an array of binary image-wise ground-truth labels.
+- For testing, they used  $\langle y_n,l_n \rangle$ unseen images of size $c \times c$ extracted form new testing data $J$ and $$l_n \in \{0,1\}$$ is an array of binary image-wise ground-truth labels.
 
 #### Optimize
 
