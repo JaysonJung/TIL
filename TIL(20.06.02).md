@@ -7,7 +7,7 @@
 
 ### Loss Function : Binary Cross-Entropy/Log Loss
 
-![binary_cross_entropy](C:\Users\jys\Documents\GitHub\TIL\img\200602\binary_cross_entropy.PNG)
+![binary_cross_entropy](/TIL/img/200602/binary_cross_entropy.PNG)
 
 - **y**: 초록/빨강을 나타내는 label(초록=1,빨강=0)
 - **p(y)**: 초록색일 확률을 나타내는 확률값
@@ -15,7 +15,7 @@
 - $log(p(y))$: 초록공에 대한 로그확률 값
 - $log(1-p(y))$: 빨간공에 대한 로그확률 값
   - log probability 사용이유? : [위키피디아][https://en.wikipedia.org/wiki/Log_probability]
-  - ![minus_logpx](C:\Users\jys\Documents\GitHub\TIL\img\200602\minus_logpx.PNG)
+  - ![minus_logpx](/TIL/img/200602/minus_logpx.PNG)
   - $$P(x)$$가 1에 가까울수록 $$-log(p(x))$$값은 0에 가까워진다
 
 ### Entropy
